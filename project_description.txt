@@ -1,0 +1,96 @@
+FILE THAT DESCRIBES THE PROJECT ON A HGH LEVEL
+
+Scope?
+The EU Deforestation Regulation (EUDR) will enter into force on December 30, 2026 (June 30, 2027 for small businesses). It prohibits the placing or export from the EU market of commodities (wood, cattle, soy, cocoa, coffee, palm oil, rubber) and derived products associated with deforestation after December 31, 2020. Therefore, companies must demonstrate the legal origin of millions of tons of raw material produced by millions of small farmers. Otherwise, they risk penalties of up to 4% of turnover (millions), exclusion from public markets, and significant reputational damage.
+Objective (product/service to be created)
+To provide a web app that can be integrated with company management systems (ERP), capable of:
+monitoring the compliance of suppliers' lands with environmental regulations along the entire supply chain in real time
+predicting the risk of deforestation to assess the risk of land lots (and thus for decision support -> which suppliers to maintain and which to change because they are too risky). A low risk entails a lower probability of controls by competent bodies and thus a lower probability of disputes, which may arise since the criteria for risk assessment are qualitative and therefore ambiguous. Furthermore, lower risks mean lower expenses for risk mitigation.
+supporting the automated production of due diligence documentation required by European and national regulations
+
+Features
+Automatic Due Diligence compilation (must be done annually)
+for each product:
+plot coordinates (in GEO-JSON format)
+supplier
+sub-supplier (if present)
+quantity
+date of production/harvest
+land geolocation
+point if < 4 hectares
+polygon if >= 4 hectares
+proof that the lot is deforestation free (the land was NOT deforested after December 31, 2020)
+Risk assessment
+Following the 14 regulatory criteria
+Risk mitigation
+Mitigation of risks identified in the risk assessment
+Risk prediction based on the most impactful criteria (those that benefit us: e.g., risk of deforestation in adjacent areas, at the country level, …)
+Digital signature of the prediction creates a small data package with: land ID, coordinates, date, and the prediction. It signs it with a secret cryptographic key. This package is sent to the Blockchain (e.g., Polygon).
+If the outcome is GREEN: An immutable certificate of conformity is generated.
+If the outcome is RED: The smart contract blocks the lot. The company receives an immediate alert and the supplier is suspended from the automated supply chain.
+Confronto di nuovi potenziali fornitori (confronto dei rischi di deforestazione associati a nuovi fornitori)
+Useful Links
+The information system of the deforestation regulation
+
+
+
+
+Value Proposition:  
+Our web app(Farm Roots) empowers companies to navigate the EU Deforestation Regulation (EUDR) with confidence, ensuring compliance, mitigating risks, and protecting their reputation. Providing real time monitoring of supply chains, predictive risk assessments, and automated due diligence documentation. This results in reduced penalties, lower operational costs, and a sustainable, transparent supply chain, all while safeguarding against reputational damage.
+
+
+
+Executive Summary
+
+This report outlines a Software as a Service (SaaS) business model designed to help companies comply with the European Union Deforestation Regulation (EUDR). The model focuses on generating revenue through tiered subscription fees, add-ons, and potential data services. Sales and marketing strategies include direct sales, partnerships, content marketing, and online advertising. Key selling points emphasize compliance, efficiency, risk mitigation, transparency, and brand reputation. Customer success is prioritized through excellent support, regular communication, and a strong customer community.
+
+Revenue Generation
+
+Subscription Fees:
+       Recurring fees based on the size of operations, the number of suppliers managed, and the features required.
+       Tiered pricing structure:
+Basic Tier: For small businesses with limited needs.
+Standard Tier: For medium-sized businesses with more complex needs.
+Premium Tier: For large enterprises with extensive needs.
+*   Add-ons:
+    *   Optional features for additional revenue:
+        *   Custom reporting and analytics.
+        *   Integration with specific ERP systems.
+        *   Premium support and training.
+*   Data Services (Long-Term):
+    *   Monetization of aggregated, anonymized data on deforestation risks.
+    *   Insights provided to governments, NGOs, and research institutions.
+
+### Sales and Marketing Strategy
+
+*   Target Market:
+    *   Focus on companies trading in regulated commodities (wood, cattle, soy, cocoa, coffee, palm oil, rubber).
+    *   Prioritize businesses at high risk of non-compliance.
+*   Strategies:
+    *   Direct Sales: Dedicated sales team.
+    *   Partnerships: Collaboration with industry associations, consulting firms, and ERP providers.
+    *   Content Marketing: Informative content (blog posts, webinars, case studies) to educate potential customers.
+    *   Online Marketing: SEO, social media, and paid advertising.
+    *   Trade Shows and Conferences: Industry event participation.
+*   Sales Process:
+    *   Lead Generation: Identification and qualification of potential customers.
+    *   Demo and Presentation: Product showcase.
+    *   Trial Period: Free trial or pilot program.
+    *   Negotiation and Closing: Finalizing agreements.
+    *   Onboarding and Support: Training and ongoing support.
+*   Key Selling Points:
+    *   Compliance: Simplifies adherence to EUDR.
+    *   Efficiency: Automates due diligence processes.
+    *   Risk Mitigation: Predictive risk assessment capabilities.
+    *   Transparency: Blockchain for supply chain traceability.
+    *   Reputation: Demonstrates commitment to sustainability.
+
+### Customer Success
+
+*   Customer Support: Excellent support and training.
+*   Communication: Regular communication for feedback and improvement.
+*   Community: Building a strong customer community.
+
+Conclusion
+
+This business model provides a framework for a sustainable and scalable SaaS business that helps companies comply with the EUDR and promotes a more sustainable future.
